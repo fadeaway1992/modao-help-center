@@ -57,12 +57,13 @@ $.ajaxSetup({
     <![endif]-->
     <!--请在这里编写顶部声明，将生成在页面head标签内--></head>
 <body>
-
-    <div style="display:block!important;padding:5px 10px;border-bottom:1px solid #eee;text-align:right;background:#f5f5f5">
-        <a href="http://www.kf5.com/?utm_source=helpcenter" target="_blank" title="逸创云客服 www.kf5.com" style="display:inline-block!important;color: #777;font-size: 14px;line-height: 27px;text-decoration:none">
-            本客服平台由<img src="./vendor/kf5-logo.png" alt="" style="  width: 115px;margin:0 12px;position: relative;top: 2px">提供产品服务
-        </a>
-    </div>
+	<!-- 使用 JS 删除 -->
+	<div style="display:block!important;padding:5px 10px;border-bottom:1px solid #eee;text-align:right;background:#f5f5f5">
+			<a href="http://www.kf5.com/?utm_source=helpcenter" target="_blank" title="逸创云客服 www.kf5.com" style="display:inline-block!important;color: #777;font-size: 14px;line-height: 27px;text-decoration:none">
+					本客服平台由<img src="./vendor/kf5-logo.png" alt="" style="  width: 115px;margin:0 12px;position: relative;top: 2px">提供产品服务
+			</a>
+	</div>
+	<!-- kf5 头部 隐藏 -->
 <header class="header">
     <div class="wrap hader-inner clearfix">
         <h1 class="logo"><a href="/hc/" title="秦长熙"><img src="./vendor/logo-hc.png" alt="" /></a></h1>
@@ -93,17 +94,74 @@ $.ajaxSetup({
             </div>
         </nav>
     </div>
-</header><main>
+</header>
+<!-- 墨刀 头部 -->
+<nav class="mb-nav-org" id="nav">
+	<div class="header-left" id="header-left">
+		<h1 class="nav-logo">
+			<a href="https://modao.cc">
+				<svg alt="墨刀 logo" class="logo core" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436.8 81.4"><style>.st0{fill:#EA5748;} .st1{fill:#3F3B3A;}</style><path class="st0" d="M128.6 47.2V34.3c0-1.8 1.4-3.2 3.2-3.2h7.1c1.8 0 3.2 1.4 3.2 3.2v12.9c0 1.8-1.4 3.2-3.2 3.2h-7.1c-1.7.1-3.2-1.4-3.2-3.2zm-36.8 0V34.3c0-1.8 1.4-3.2 3.2-3.2h7.1c1.8 0 3.2 1.4 3.2 3.2v12.9c0 1.8-1.4 3.2-3.2 3.2H95c-1.8.1-3.2-1.4-3.2-3.2zm15.9 34.2h54.8c11.7 0 21.7-5.5 28.7-15.5l-6.7-3.9c-6 8.1-12.9 11.6-21.9 11.6h-54.8c-9 0-16-3.5-21.9-11.6L79 65.9c7 10 17 15.5 28.7 15.5zM162.5 0h-54.8C96 0 86 5.5 79 15.5l6.7 3.9c6-8.1 12.9-11.6 21.9-11.6h54.8c9 0 16 3.5 21.9 11.6l6.7-3.9C184.2 5.5 174.2 0 162.5 0z"/><path class="st1" d="M21.3 41.2h-9.1v-.9h8.7v-2.1h-8.7v-.9h8.5v-7.6H.9v7.6h8.5v.9H.8v2.1h8.7v.9H.4v2.1h20.9v-2.1zM18 31.7v3.4h-5.9v-3.4H18zM3.6 35.1v-3.4h5.9v3.4H3.6zm8.6 14.1v-.8h9.1v-2h-9.1v-2.5H9.5v2.5H.4v2h9.1v.8H0v2.1h21.6v-2.1z"/><path class="st1" d="M7.4 32.5H5.1l.4 1.9h2.3zm8.7 1.9l.4-1.9h-2.3l-.3 1.9zM3 45.8l.4-1.9H1.1l-.3 1.9zm4.4 0l.4-1.9H5.5l-.4 1.9zm6.8 0h2.3l-.4-1.9h-2.2zm4.4 0h2.3l-.4-1.9h-2.3zm9.5-16.2V33h6.3c-.1 1.4-.2 3.6-.4 5.7-.3 5.5-3.2 8.7-7.2 9.9l1.6 3.1c3.9-1.5 8.4-4.8 8.9-12.6.2-2.4.3-4.9.4-6.2h7.9v18.2H49V29.6H28.1zm226-.4c-6.2 0-11.2 5-11.2 11.2s5 11.2 11.2 11.2c6.2 0 11.2-5 11.2-11.2s-5.1-11.2-11.2-11.2zm0 18.6c-4.1 0-7.4-3.3-7.4-7.4 0-4.1 3.3-7.4 7.4-7.4s7.4 3.3 7.4 7.4c0 4.1-3.4 7.4-7.4 7.4zm-36.8-19v22.5h3.8V37.9l6.6 6.6 6.6-6.6v13.4h3.8V28.8l-10.4 10.4zm189.9.4c-6.2 0-11.2 5-11.2 11.2 0 6.2 5 11.2 11.2 11.2s11.2-5 11.2-11.2c0-6.2-5-11.2-11.2-11.2zm0 18.6c-4.1 0-7.4-3.3-7.4-7.4 0-4.1 3.3-7.4 7.4-7.4s7.4 3.3 7.4 7.4c0 4.1-3.3 7.4-7.4 7.4zm-90-18.3h3.8v21.7h-3.8zm119.6 0h-17.1v3.9h6.7v17.9h3.8V33.4h6.6zm-95.7 13.4L327 28.8v22.5h3.8V37.9L344.9 52V29.6h-3.8zM307 29.5l-10.1 10.1V29.5h-3.8v21.8h3.8V41.2L307 51.3h5.2l-10.9-10.9 10.9-10.9zm-26.8 18.3c-4.1 0-7.4-3.3-7.4-7.4 0-4.1 3.3-7.4 7.4-7.4 2.1 0 3.9.8 5.3 2.2l2.7-2.7c-2-2-4.8-3.3-8-3.3-6.2 0-11.2 5-11.2 11.2 0 6.2 5 11.2 11.2 11.2 3.1 0 5.9-1.3 8-3.3l-2.7-2.7c-1.4 1.4-3.2 2.2-5.3 2.2zm82.8-7.4v3.8h3v2.4c-1.2.8-2.6 1.3-4.1 1.3-4.1 0-7.4-3.3-7.4-7.4 0-4.1 3.3-7.4 7.4-7.4 2.1 0 3.9.8 5.3 2.2l2.7-2.7c-2-2-4.8-3.3-8-3.3-6.2 0-11.2 5-11.2 11.2 0 6.2 5 11.2 11.2 11.2 3.1 0 5.9-1.3 8-3.3v-8H363zm27.1-.7c.8-1 1.2-2.3 1.2-3.7 0-3.5-2.9-6.4-6.4-6.4h-9.2v21.7h10.7c3.5 0 6.4-2.9 6.4-6.4 0-2.2-1.1-4.1-2.7-5.2zm-5.2-6.3c1.4 0 2.6 1.2 2.6 2.6 0 1.4-1.2 2.6-2.6 2.6h-5.4v-5.1h5.4zm1.5 14.1h-6.9v-5.1h6.9c1.4 0 2.6 1.2 2.6 2.6 0 1.3-1.1 2.5-2.6 2.5z"/></svg>
+				<svg alt="墨刀 logo" class="logo core-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 81.4"><style>.st0{fill:#EB5648;}</style><path class="st0" d="M49.6 47.2V34.3c0-1.8 1.4-3.2 3.2-3.2h7.1c1.8 0 3.2 1.4 3.2 3.2v12.9c0 1.8-1.4 3.2-3.2 3.2h-7.1c-1.7.1-3.2-1.4-3.2-3.2zm-36.8 0V34.3c0-1.8 1.4-3.2 3.2-3.2h7.1c1.8 0 3.2 1.4 3.2 3.2v12.9c0 1.8-1.4 3.2-3.2 3.2H16c-1.8.1-3.2-1.4-3.2-3.2zm15.9 34.2h54.8c11.7 0 21.7-5.5 28.7-15.5l-6.7-3.9c-6 8.1-12.9 11.6-21.9 11.6H28.8c-9 0-16-3.5-21.9-11.6L0 65.9c7 10 17 15.5 28.7 15.5zM83.5 0H28.7C17 0 7 5.5 0 15.5l6.7 3.9c6-8.1 12.9-11.6 21.9-11.6h54.8c9 0 16 3.5 21.9 11.6l6.7-3.9C105.2 5.5 95.2 0 83.5 0z"/></svg>
+			</a>
+		</h1>
+		<div class="switch-lang">
+			<a class="active cn" onclick="set_language('zh_cn')" href="javascript:void(0);">中文</a>
+			<span>/</span>
+			<a class="en" onclick="set_language('en')" href="javascript:void(0);">EN</a>
+		</div>
+	</div>
+		
+	<div class="menu-center" id="menu-center">
+		<ul class="menu-content">
+			<li class="features" data-track-id="features">
+				<a href="https://modao.cc/features">功能概览</a>
+			</li>
+			<li class="company" data-track-id="enterprise" id="company">
+				<div class="company-content">
+					<a href="https://modao.cc/enterprise" class="">企业版</a>
+				</div>
+			</li>
+			<li data-track-id="downloads">
+				<a href="https://modao.cc/downloads">下载</a>
+			</li>
+			<li data-track-id="pricing">
+				<a href="https://modao.cc/pricing">价格</a>
+			</li>
+			<li data-track-id="tutorials">
+				<a href="https://modao.cc/tutorials">教程</a>
+			</li>
+			<li data-track-id="forum">
+				<a href="https://modao.cc/forum">讨论区</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="menu-right" id="menu-right">
+		<ul id="login-menu">
+			<li data-track-id="workspace">
+				<a class="primary workspace" href="https://modao.cc/dashboard">进入工作区</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<main>
 	<section class="search-box">
+			<!-- <div class="header-icon">
+				<img src="https://qiniu-test.modao.cc/header-1.svg" class="icon1">
+				<img src="https://qiniu-test.modao.cc/header-2.svg" class="icon2">
+			</div> -->
+			<header class="header-title">请问有什么可以帮您？</header>
         <form id="forum-search-form" accept-charset="UTF-8" action="/hc/search/results/" class="search" method="get" role="search">
                 <div class="search-match">
                     <label for="top-search">
                         <input type="hidden" name="type" value="kb" />
-                        <input type="search" id="search" name="keyword" value="" placeholder="输入问题关键字，找到答案" autocomplete="off" x-webkit-speech />
+                        <input type="search" id="search" name="keyword" value="" placeholder="搜索答案" autocomplete="off" x-webkit-speech />
                     </label>
-                    <ul id="search-match-list" class="match-list"></ul>
+										<ul id="search-match-list" class="match-list"></ul>
+										<button type="submit" name="" value="">
+										  <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon search" viewBox="0 0 12 12" aria-hidden="true"><path d="M10.077 11.67l-1.99-1.99a5.227 5.227 0 0 1-2.828.837 5.259 5.259 0 1 1 5.259-5.258c0 1.043-.313 2.01-.837 2.828l1.989 1.988a1.128 1.128 0 0 1-1.593 1.595zM5.237 1.443a3.795 3.795 0 1 0 .002 7.59 3.795 3.795 0 0 0-.002-7.59z"></path></svg>
+									  </button>
                 </div>
-                <input type="submit" name="" value="搜索">
             </form>
 	</section>
     <section class="content">
@@ -156,10 +214,113 @@ $.ajaxSetup({
             </section>
         </div>
     </section>
-</main><footer class="footer">
-    <div class="footer-inner wrap">
-        <a href='http://modao.cc' target='_blank'>Powered By 墨刀</a>
-    </div>
+</main>
+<footer class="mb-footer-new">
+		<div class="list">
+		<h2>产品</h2>
+		<ul>
+		<li class="footer-link">
+		<a href="/features#sec2-library" target="_blank">素材库</a>
+		</li>
+		<li class="footer-link">
+		<a href="/features#sec2-desgin" target="_blank">设计及演示</a>
+		</li>
+		<li class="footer-link">
+		<a href="/inspect" target="_blank">Sketch 插件&amp;标注</a>
+		</li>
+		<li class="footer-link">
+		<a href="/enterprise" target="_blank">企业版</a>
+		</li>
+		<li class="footer-link">
+		<a href="https://modao.cc/app/changelog" target="_blank">更新日志</a>
+		</li>
+		<li class="footer-link">
+		<a href="/downloads" target="_blank">产品下载</a>
+		</li>
+		</ul>
+		</div>
+		<div class="list">
+		<h2>支持</h2>
+		<ul>
+		<li>
+		<a href="/tutorials" target="_blank">教程</a>
+		</li>
+		<!--
+		<li>
+		<a href='http://study.163.com/course/introduction/1004504011.htm' target='_blank'>视频</a>
+		</li>
+		-->
+		<!--  -->
+		<li>
+		<a href="http://class.modao.im/" target="_blank">公开课</a>
+		</li>
+		<li class="footer-link">
+		<a href="/forum" target="_blank">讨论区</a>
+		</li>
+		<li>
+		<a href="https://jinshuju.net/f/EqHIlS" target="_blank">公益/教育优惠</a>
+		</li>
+		</ul>
+		</div>
+		<div class="list">
+		<h2>关于</h2>
+		<ul>
+		<li>
+		<a href="/about" target="_blank">关于我们</a>
+		</li>
+		<li>
+		<a href="https://www.lagou.com/gongsi/j121869.html" target="_blank">加入我们</a>
+		</li>
+		<li>
+		<a href="/tos" target="_blank">使用条款</a>
+		</li>
+		<li>
+		<a href="/privacy" target="_blank">隐私协议</a>
+		</li>
+		</ul>
+		</div>
+		<div class="list">
+		<h2>更多</h2>
+		<ul>
+		<li>
+		<a href="https://cdn.modao.cc/cf/%E5%90%91%E4%BB%96%E4%BA%BA%E4%BB%8B%E7%BB%8D%E5%A2%A8%E5%88%80v4.0%E7%89%88.pdf" target="_blank">向他人介绍墨刀</a>
+		</li>
+		<li>
+		<a href="https://modao.cc/posts/9463" target="_blank">「解x」计划</a>
+		</li>
+		<li>
+		<a href="https://modao.cc/posts/10270" target="_blank">墨刀特约讲师</a>
+		</li>
+		<li>
+		<a href="https://modao.cc/posts/9090" target="_blank">墨刀原型专家</a>
+		</li>
+		<li>
+		<a href="/map" target="_blank">网址导航</a>
+		</li>
+		</ul>
+		</div>
+		<div class="contact">
+		<h2>联系我们</h2>
+		<ul class="content">
+		<li><p>如需帮助，请发送邮件至 <a href="mailto:support@mockingbot.com">support@mockingbot.com</a></p></li>
+		<li><p>商务合作：<a href="mailto:bd@mockingbot.com">bd@mockingbot.com</a></p></li>
+		</ul>
+		<ul class="concat_icon_logo">
+		<li>
+		<a href="http://weibo.com/mockingbot" target="_blank">
+		<img class="icon" src="/images/landing/homepage/new_1/icon/weibo.svg">
+		<img class="icon" id="active" src="/images/landing/homepage/new_1/icon/weibo-white.svg">
+		</a>
+		</li>
+		<li>
+		<a class="wechat">
+		<img class="icon" src="/images/landing/homepage/new_1/icon/wechat.svg">
+		<img class="icon" id="active" src="/images/landing/homepage/new_1/icon/wechat-white.svg">
+		<img class="qrcode" src="/images/landing/homepage/new_1/wechat-qrcode.png">
+		</a>
+		</li>
+		</ul>
+		</div>
 </footer>
 <script type="text/javascript" src="./vendor/theme_qing.js"></script>
 <script type="text/javascript" src="./vendor/ajaxupload.3.5.js"></script>
@@ -405,5 +566,6 @@ $.ajaxSetup({
 
 /*]]>*/
 </script>
+<script src="./global.js"></script>
 </body>
 </html>
