@@ -1589,6 +1589,7 @@ nav.mb-nav-org #menu-right ul#login-menu a.primary:hover {
 }
 
 /* 首页 */
+/* 快速上手 */
 section.content .wrap {
   margin-top: 64px;
 }
@@ -1657,6 +1658,101 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   color: #298DF8;
   line-height: 22px;
 }
+
+/* 视频教程 */
+.wrap section.video-tutorial div.title {
+  margin-bottom: 39px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap section.video-tutorial div.title h2 {
+  color: #1F292E;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wrap section.video-tutorial div.title .more {
+  color: #415058;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+.wrap section.video-tutorial ul.video-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrap section.video-tutorial ul.video-list li.video-item {
+  width: 373px;
+}
+.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap {
+  position: relative;
+}
+.wrap section.video-tutorial ul.video-list li.video-item img.video-cover {
+  width: 100%;
+  height: auto;
+}
+.wrap section.video-tutorial ul.video-list li.video-item img.play-button-icon {
+  position: absolute;
+  width: 56px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.wrap section.video-tutorial ul.video-list li.video-item p.video-grade {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  width: 57px;
+  line-height: 20px;
+  background: #FF6161;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 2px;
+}
+.wrap section.video-tutorial ul.video-list li.video-item h3.video-title {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+.video-examples .cover {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-examples .cover .video-box {
+  width: 70%;
+  position: relative;
+}
+.video-examples .cover .video-box img.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  cursor: pointer;
+}
+.video-examples .cover .video-box video {
+  width: 100%;
+  height: auto;
+  outline: none;
+}
+
 
 /* 联系客服 */
 .footer {
