@@ -425,7 +425,7 @@ form.search {
   transition: all ease 0.4s;
 }
 main section.content {
-  margin: 64px 0;
+  margin: 66px 0;
 }
 .content h2 {
   font-size: 18px;
@@ -449,7 +449,6 @@ main section.content {
   min-height: 1px;
 }
 .content-main {
-  float: left;
   width: 68%;
 }
 .content-main.content-full {
@@ -1755,9 +1754,6 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
 }
 
 /* 更多问题 */
-.wrap section.fq {
-
-}
 .wrap section.fq h2 {
   color: #1F292E;
   font-size: 30px;
@@ -1787,6 +1783,10 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   line-height: 30px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+.wrap section.fq ul.fq-list li.fq-item .item-title a {
+  color: inherit;
+  text-decoration: none;
 }
 .wrap section.fq ul.fq-list li.fq-item .question-list {
   padding: 0;
