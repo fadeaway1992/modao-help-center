@@ -2216,6 +2216,37 @@ section.no-result .tips-container ul.tips-list>li>span {
   height: 39px;
 }
 
+/* 回到顶部 */
+.footer #toTop:hover {
+  opacity: 0.8;
+}
+.footer #toTop {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 103px;
+  cursor: pointer;
+  overflow: visible;
+  z-index: 9990;
+  width: 54px;
+  height: 54px;
+  background-image: url(https://modao.cc/images/landing/homepage/new_1/icon/toTop.svg);
+  -webkit-background-size: 21px 22px;
+  -moz-background-size: 21px 22px;
+  background-size: 21px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  transition: all 0.15s;
+  -webkit-box-shadow: 0 6px 16px 0 rgba(65,80,88,0.16);
+  box-shadow: 0 6px 16px 0 rgba(65,80,88,0.16);
+  border-radius: 50%;
+  background-color: #7d8694;
+  opacity: 0.3;
+}
 
 
 

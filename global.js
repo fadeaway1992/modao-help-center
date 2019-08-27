@@ -59,7 +59,7 @@ function closeVideo(e) {
 }
 
 /* 搜索结果页面 */
-if(location.href.indexOf('/search/results') !== 0) {
+if(location.href.indexOf('/search/results') !== -1) {
   const searchResultText = document.querySelector('.search-btitle').textContent
   const regexp = /搜索到\s+(\d+)\s+条\s+"(.+)"/
   const [match, searchResultCount, keywords] = regexp.exec(searchResultText)
@@ -74,3 +74,59 @@ if(location.href.indexOf('/search/results') !== 0) {
     searchResultContainer.querySelector('.search-keyword').innerHTML = keywords
   }
 }
+
+/* 返回顶部 */
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+/* 简单节流函数 */
+function throttle(func, wait, options) {
+  var context, args, result;
+  var timeout = null;
+  var previous = 0;
+  if (!options) options = {};
+  var later = function() {
+    previous = options.leading === false ? 0 : Date.now();
+    timeout = null;
+    result = func.apply(context, args);
+    if (!timeout) context = args = null;
+  };
+  return function() {
+    var now = Date.now();
+    if (!previous && options.leading === false) previous = now;
+    var remaining = wait - (now - previous);
+    context = this;
+    args = arguments;
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      previous = now;
+      result = func.apply(context, args);
+      if (!timeout) context = args = null;
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+};
+
+/* 侦听页面滚动 */
+function onScroll() {
+  const clientHeight = window.innerHeight
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  const toTop = document.getElementById('toTop')
+  if (scrollTop < clientHeight) {
+    toTop.style.display = 'none'
+  } else {
+    toTop.style.display = 'block'
+    console.log('hhhh')
+  }
+}
+
+window.onscroll = throttle(onScroll, 300, {leading: true, trailing: true})
