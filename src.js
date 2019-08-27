@@ -44,7 +44,13 @@ if (sideTree) {
 
 // 点击播放视频
 function playVideo (e) {
-  const selector = e.target.dataset.play
+  console.log(e)
+  console.log(e.target, e.target.querySelector('img.play-button-icon'))
+  let target = e.target
+  while(!target.classList.contains('img-wrap')) {
+    target = target.parentNode
+  }
+  const selector = target.dataset.play
   const videoCover = document.querySelector(`#${selector}`)
   videoCover.style.display = 'flex'
   videoCover.querySelector('video').play()
