@@ -121,6 +121,12 @@ function onScroll() {
   const clientHeight = window.innerHeight
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
   const toTop = document.getElementById('toTop')
+  const headBar = document.querySelector('#nav')
+  if(scrollTop === 0) {
+    headBar.style.backgroundColor = '#FAFAFC'
+  } else {
+    headBar.style.backgroundColor = '#FFFFFF'
+  }
   if (scrollTop < clientHeight) {
     toTop.style.display = 'none'
   } else {
