@@ -4,13 +4,24 @@
   "description": "",
   "main": "global.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "babel src.js -o bundle.js && rollup -c --no-treeshake",
+    "uglify": "uglifyjs --compress --mangle -o uglified.js -- global.js",
+    "css": "uglifycss theme_qing.css > uglified.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browserslist": "^4.6.6",
+    "rollup": "^1.20.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "core-js": "^3.2.1"
   }
 }
