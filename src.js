@@ -44,8 +44,6 @@ if (sideTree) {
 
 // 点击播放视频
 function playVideo (e) {
-  console.log(e)
-  console.log(e.target, e.target.querySelector('img.play-button-icon'))
   let target = e.target
   while(!target.classList.contains('img-wrap')) {
     target = target.parentNode
@@ -55,6 +53,10 @@ function playVideo (e) {
   videoCover.style.display = 'flex'
   videoCover.querySelector('video').play()
 }
+const videos = document.querySelectorAll('.video-item .img-wrap')
+videos.length && videos.forEach(function(video) {
+  video.addEventListener('click', playVideo)
+})
 
 // 停止视频播放
 function closeVideo(e) {
@@ -63,6 +65,10 @@ function closeVideo(e) {
   video.pause()
   e.target.parentNode.parentNode.style.display = 'none'
 }
+const videoCloseIcons = document.querySelectorAll('.video-box .close-icon')
+videoCloseIcons.length && videoCloseIcons.forEach(function(button) {
+  button.addEventListener('click', closeVideo)
+})
 
 /* 搜索结果页面 */
 if(location.href.indexOf('/search/results') !== -1) {
@@ -88,6 +94,8 @@ function scrollToTop() {
     behavior: 'smooth'
   })
 }
+const toTop = document.getElementById('toTop')
+toTop && toTop.addEventListener('click', scrollToTop)
 
 /* 简单节流函数 */
 function throttle(func, wait, options) {
@@ -130,8 +138,10 @@ function onScroll() {
   const headBar = document.querySelector('#nav')
   if(scrollTop === 0) {
     headBar.style.backgroundColor = '#FAFAFC'
+    headBar.style.boxShadow = 'none'
   } else {
     headBar.style.backgroundColor = '#FFFFFF'
+    headBar.style.boxShadow = 'rgba(0,0,0,0.06) 0 6px 10px'
   }
   if (scrollTop < clientHeight) {
     toTop.style.display = 'none'

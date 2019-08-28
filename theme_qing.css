@@ -260,8 +260,9 @@ form.search {
 .search-box .search .match-list {
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 63px;
   display: none;
+  padding: 6px 0;
   background-color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -276,13 +277,13 @@ form.search {
   padding: 0 15px;
   height: 40px;
   line-height: 40px;
-  border-bottom: 1px solid #e2eaec;
   text-align: left;
   color: #374051;
+  text-decoration: none;
 }
 .search-box .search .match-list a:hover {
-  background-color: #f4f8f9;
-  color: #428bca;
+  background-color: #F2F2F2;
+  color: #1F292E;
 }
 .search-box .search label[for=top-search] {
   height: 100%;
@@ -1717,28 +1718,38 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   width: 100%;
   height: auto;
 }
-.wrap section.video-tutorial ul.video-list li.video-item img.play-button-icon {
+.wrap section.video-tutorial ul.video-list li.video-item .play-button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 56px;
+  height: 56px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: rgba(31,41,46,0.16) 0 2px 8px;
 }
-.wrap section.video-tutorial ul.video-list li.video-item img.play-button-icon-hover {
-  position: absolute;
-  width: 56px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.wrap section.video-tutorial ul.video-list li.video-item .play-button-icon img {
+  width: 13px;
+  height: auto;
   cursor: pointer;
-  display:none
+  transform: translateX(2px);
 }
-.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap:hover img.play-button-icon {
+.wrap section.video-tutorial ul.video-list li.video-item .play-button-icon img.video-play-icon-hover {
   display: none;
 }
-.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap:hover img.play-button-icon-hover {
+.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap:hover .play-button-icon {
+  box-shadow: rgba(31,41,46,0.16) 0 2px 20px;
+}
+.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap:hover img.video-play-icon-hover {
   display: block;
+}
+.wrap section.video-tutorial ul.video-list li.video-item div.img-wrap:hover img.video-play-icon-static {
+  display: none;
 }
 .wrap section.video-tutorial ul.video-list li.video-item p.video-grade {
   position: absolute;

@@ -280,28 +280,34 @@ $.ajaxSetup({
 						</div>
 						<ul class="video-list">
 							<li class="video-item">
-								<div class="img-wrap" onclick="playVideo(event)" data-play="video-example-1">
+								<div class="img-wrap" data-play="video-example-1">
 									<img class="video-cover" src="https://qiniu-test.modao.cc/shipinjiaocheng1.jpg" alt="开始设计：操作基础" />
-									<img src="https://qiniu-test.modao.cc/playbuttonc.svg" alt="播放" class="play-button-icon">
-									<img src="https://qiniu-test.modao.cc/play-button-hover.svg" alt="播放" class="play-button-icon-hover">
+									<div class="play-button-icon">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-static.svg" class="video-play-icon-static" alt="播放">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-hover.svg" class="video-play-icon-hover" alt="播放">
+									</div>
 									<p class="video-grade">基础教程</p>
 								</div>
 								<h3 class="video-title">开始设计：基础操作</h3>
 							</li>
 							<li class="video-item">
-								<div class="img-wrap" onclick="playVideo(event)" data-play="video-example-2">
+								<div class="img-wrap" data-play="video-example-2">
 									<img class="video-cover" src="https://qiniu-test.modao.cc/shipinjiaocheng2.jpg" alt="开始设计：操作基础" />
-									<img src="https://qiniu-test.modao.cc/playbuttonc.svg" alt="播放" class="play-button-icon">
-									<img src="https://qiniu-test.modao.cc/play-button-hover.svg" alt="播放" class="play-button-icon-hover">
+									<div class="play-button-icon">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-static.svg" class="video-play-icon-static" alt="播放">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-hover.svg" class="video-play-icon-hover" alt="播放">
+									</div>
 									<p class="video-grade">进阶操作</p>
 								</div>
 								<h3 class="video-title">墨刀：1小时快速学会原型设计</h3>
 							</li>
 							<li class="video-item">
-								<div class="img-wrap" onclick="playVideo(event)" data-play="video-example-3">
+								<div class="img-wrap" data-play="video-example-3">
 									<img class="video-cover" src="https://qiniu-test.modao.cc/shipinjiaocheng3.jpg" alt="开始设计：操作基础" />
-									<img src="https://qiniu-test.modao.cc/playbuttonc.svg" alt="播放" class="play-button-icon">
-									<img src="https://qiniu-test.modao.cc/play-button-hover.svg" alt="播放" class="play-button-icon-hover">
+									<div class="play-button-icon">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-static.svg" class="video-play-icon-static" alt="播放">
+										<img src="https://qiniu-test.modao.cc/video-play-icon-hover.svg" class="video-play-icon-hover" alt="播放">
+									</div>
 									<p class="video-grade">进阶操作</p>
 								</div>
 								<h3 class="video-title">创建移动端和Web项目</h3>
@@ -362,18 +368,18 @@ $.ajaxSetup({
 			</section>
 			<section class="video-examples">
 				<div class="cover" id="video-example-1" style="display: none;">
-					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_design.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon" onclick="closeVideo(event)"></div>
+					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_design.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon"></div>
 				</div>
 				<div class="cover" id="video-example-2" style="display: none;">
-					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_inspect.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon" onclick="closeVideo(event)"></div>
+					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_inspect.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon"></div>
 				</div>
 				<div class="cover" id="video-example-3" style="display: none;">
-					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_interact.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon" onclick="closeVideo(event)"></div>
+					<div class="video-box"><video src="https://cdn.modao.cc/video/cf/0715/new_interact.mp4" controls autoplay preload="none"></video><img src="https://qiniu-test.modao.cc/closeicon.svg" alt="关闭" class="close-icon"></div>
 				</div>
 			</section>
 </main>
 <div class="footer">
-	<div id="toTop" style="display: none;" onclick="scrollToTop()"></div>
+	<div id="toTop" style="display: none;"></div>
 	<header class="footer-title">无法解决您的问题？</header>
 	<span class="footer-desc">欢迎将您需要的教程<a href="https://jinshuju.net/f/rCYg0T">告诉我们</a>，我们会定期根据大家的需求进行优化</span>
 	<div class="footer-concat">
