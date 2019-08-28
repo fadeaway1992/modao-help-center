@@ -17,7 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
   color: #27364E;
   -webkit-font-smoothing: antialiased;
-  min-width: 1440px;
+  min-width: 1009px;
   line-height: 1;
 }
 code,
@@ -158,7 +158,9 @@ textarea:focus {
 }
 section.content .wrap {
   width: initial;
-  padding: 0 165px;
+  max-width: 1460px;
+  box-sizing: border-box;
+  padding: 0 100px;
   margin: 0 auto;
 }
 input,
@@ -1612,7 +1614,13 @@ section.content .wrap section.cate.startup h2 {
 section.content .wrap section.cate.startup ul.cate-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+@media (min-width: 1320px) {
+  section.content .wrap section.cate.startup ul.cate-list {
+    justify-content: space-between;
+  }
 }
 section.content .wrap section.cate.startup ul.cate-list {
   margin-bottom: 24px;
@@ -1702,11 +1710,18 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
 .wrap section.video-tutorial ul.video-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+@media (min-width: 1360px) {
+  .wrap section.video-tutorial ul.video-list {
+    justify-content: space-between;
+  }
 }
 .wrap section.video-tutorial ul.video-list li.video-item {
   width: 373px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .wrap section.video-tutorial ul.video-list li.video-item:last-child {
   margin-right: 0;
@@ -1819,6 +1834,17 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   justify-content: start;
   margin-top: 40px;
 }
+@media (min-width: 1360px) {
+  .wrap section.fq ul.fq-list {
+    justify-content: space-between;
+  }
+  .wrap section.fq ul.fq-list::after {
+    content: '';
+    display: block;
+    width: 352px;
+    margin: 0 24px 24px 0;
+  }
+}
 .wrap section.fq ul.fq-list li.fq-item {
   width: 352px;
   padding: 32px;
@@ -1892,6 +1918,12 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
 .footer .footer-concat {
   margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1125px) {
+  .footer .footer-concat {
+    display: block;
+  }
 }
 .footer .footer-concat .concat-card:first-child {
   margin-right: 24px;
@@ -1907,6 +1939,7 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   align-items: center;
   padding: 0 40px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 .footer .footer-concat .concat-card:hover{
   text-decoration: none;
