@@ -478,20 +478,20 @@ main section.content {
 .content-main .section h3 {
   font-size: 18px;
   padding-left: 10px;
-  border-left: 2px solid #21d376;
+  border-left: 2px solid #DBDBDB;
   line-height: 1;
   margin-bottom: 20px;
 }
 .content-main .section h3 a {
-  color: #374051;
+  color: #1F292E;
 }
 .content-main .section h3 a:hover {
-  color: #428bca;
+  color: #1A70D8;
 }
 .content-main .section .more {
   font-size: 12px;
   margin-left: 12px;
-  color: #777777;
+  color: #5B6B73;
 }
 .content-main .category-list,
 .content-main .article-list {
@@ -513,7 +513,7 @@ main section.content {
   height: 4px;
   width: 4px;
   border-radius: 100%;
-  background-color: #d0d3dc;
+  background-color: #DBDBDB;
 }
 .content-main .category-list li.promoted:before,
 .content-main .article-list li.promoted:before {
@@ -529,12 +529,12 @@ main section.content {
 }
 .content-main .category-list a,
 .content-main .article-list a {
-  color: #428bca;
+  color: #298DF8;
   font-size: 16px;
 }
 .content-main .category-list a:hover,
 .content-main .article-list a:hover {
-  color: #569fde;
+  color: #1A70d8;
 }
 .content-main .category-list a:hover,
 .content-main .article-list a:hover {
@@ -2188,7 +2188,7 @@ section.side-tree .cate-wrap.open ul {
 .sub-nav .breadcrumbs li:first-child {
   color: #415058;
 }
-.sub-nav .breadcrumbs li:first-child:hover {
+.sub-nav .breadcrumbs li a:hover {
   color: #1A70D8;
 }
 .sub-nav .breadcrumbs li a{
