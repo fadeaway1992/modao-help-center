@@ -434,7 +434,7 @@ main section.content {
 .content h2 {
   font-size: 18px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e2eaec;
+  border-bottom: 1px solid #e8e8e8;
   padding-left: 4px;
   margin-bottom: 30px;
   font-weight: bold;
@@ -1377,8 +1377,11 @@ main section.content {
   margin-bottom: 40px;
 }
 .search-results-list h3 > a {
-  color: #2180D2;
+  color: #298DF8;
   font-size: 18px;
+}
+.search-results-list h3 > a:hover {
+  color: #1A70D8;
 }
 .search-results-list h3 {
   margin-bottom: 8px;
@@ -1388,7 +1391,7 @@ main section.content {
 }
 .search-results-list p {
   font-size: 15px;
-  color: #4b5465;
+  color: #415058;
   line-height: 1.5em;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1397,7 +1400,7 @@ main section.content {
 .search-results-list p.info {
   margin-top: 8px;
   font-size: 12px;
-  color: #00ab4e;
+  color: #5B6B73;
 }
 .search-results-title {
   margin-bottom: 0 !important;
@@ -1418,10 +1421,10 @@ main section.content {
   margin-right: 10px;
 }
 .search-results-nav a:hover {
-  color: #428bca;
+  color: #1A70D8;
 }
 .search-results-nav a.active {
-  border-bottom: 2px solid #21d376;
+  border-bottom: 2px solid #5B6B73;
 }
 /*翻页*/
 .pagination {
@@ -1440,8 +1443,8 @@ main section.content {
 }
 .pagination .active a,
 .pagination .selected a {
-  border-color: #21d376;
-  background: #21d376;
+  border-color: #5B6B73;
+  background: #5B6B73;
   color: #fff !important;
 }
 .pagination li > a {
@@ -1452,24 +1455,24 @@ main section.content {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: #428bca;
+  color: #298DF8;
   border-radius: 3px;
 }
 .pagination li > a:hover {
-  color: #569fde;
+  color: #1A70D8;
 }
 .pagination li > a:hover {
   text-decoration: none;
-  border-color: #21d376;
+  border-color: #1A70D8;
 }
 .pagination.right {
   float: right;
 }
 .info-block a {
-  color: #428bca;
+  color: #298DF8;
 }
 .info-block a:hover {
-  color: #569fde;
+  color: #1A70D8;
 }
 
 /* header */
@@ -1874,7 +1877,6 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   color: #1F292E;
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 12px;
 }
 .footer .footer-desc {
   color: #415058;
@@ -1903,7 +1905,8 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   width: 543px;
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 .footer .footer-concat .concat-card:hover{
   text-decoration: none;
@@ -1913,6 +1916,7 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   background-image: url(https://qiniu-test.modao.cc/kefu.svg);
   width: 45px;
   height: 41px;
+  flex-shrink: 0;
 }
 .footer .footer-concat .concat-card .kefu-icon:hover {
   background-image: url(https://qiniu-test.modao.cc/kefu-hover.svg);
@@ -1923,10 +1927,12 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   flex-direction: column;
 }
 .footer .footer-concat .concat-card .content .kefu-title {
-  color: #298DF8;
+  color: #1F292E;
+  text-decoration: none;
 }
 .footer .footer-concat .concat-card .content .title:hover {
   color: #1A70D8;
+  text-decoration: none;
 }
 .footer .footer-concat .concat-card .content .desc {
   line-height: 1.7;
@@ -2149,6 +2155,9 @@ section.side-tree .cate-wrap.open ul {
 .sub-nav .breadcrumbs li:first-child {
   color: #415058;
 }
+.sub-nav .breadcrumbs li:first-child:hover {
+  color: #1A70D8;
+}
 .sub-nav .breadcrumbs li a{
   color: inherit;
   text-decoration: none;
@@ -2256,7 +2265,7 @@ section.no-result .tips-container ul.tips-list>li>span {
 }
 .wrap .search-results-nav {
   background: #FAFAFA;
-  border: 1px solid #979797;
+  border: none;
   border-radius: 2px;
 }
 .wrap .search-results-nav a.active {

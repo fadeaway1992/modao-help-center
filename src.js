@@ -77,7 +77,9 @@ if(location.href.indexOf('/search/results') !== -1) {
   const [match, searchResultCount, keywords] = regexp.exec(searchResultText)
   document.querySelector('input[name=keyword]').value = keywords
   if(searchResultCount === '0') {
-    searchResultsList = document.querySelector('ul.search-results-list')
+    const footer = document.querySelector('.footer')
+    footer.parentNode.removeChild(footer)
+    const searchResultsList = document.querySelector('ul.search-results-list')
     searchResultsList.parentNode.removeChild(searchResultsList)
     const tobeInserted = `<h2 class="no-result-title">抱歉,没有找到“<span class="search-keyword"></span>”的相关结果</h2><p class="no-result-subtitle">尝试修改关键词或将您需要的教程具体内容<a href="https://jinshuju.net/f/rCYg0T">告诉我们</a>，我们会定期优化</p><div class="tips-container"><h3><img src="https://cdn.modao.cc/tips_icon.svg" alt="搜索技巧" class="tips-icon">搜索技巧</h3><ul class="tips-list"><li class="tips-items"><span></span>使用更加精简的关键词。比如使用“转移”，而不是“怎么转移项目”</li><li class="tips-items"><span></span>检查是否有错别字和特殊符号</li><li class="tips-items"><span></span>尝试换一个关键词搜索。比如搜索“时间组件”搜到的不是想要的内容，换成“日期组件”</li></ul></div>`
     const searchResultContainer = document.querySelector('section.no-result')
