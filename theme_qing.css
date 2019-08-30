@@ -1946,7 +1946,7 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   width: 543px;
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 25px 0 38px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
@@ -1955,16 +1955,16 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   box-shadow: 0 2px 20px 0 rgba(0,0,0,0.06);
 }
 .footer .footer-concat .concat-card .kefu-icon {
-  background-image: url(https://qiniu-test.modao.cc/kefu.svg);
-  width: 45px;
-  height: 41px;
+  background-image: url(https://qiniu-test.modao.cc/feed-back.svg);
+  width: 36px;
+  height: 42px;
   flex-shrink: 0;
 }
-.footer .footer-concat .concat-card .kefu-icon:hover {
-  background-image: url(https://qiniu-test.modao.cc/kefu-hover.svg);
+.footer .footer-concat .concat-card:first-child:hover .kefu-icon {
+  background-image: url(https://qiniu-test.modao.cc/feed-back-hover.svg);
 }
 .footer .footer-concat .concat-card .content {
-  margin-left: 32px;
+  margin-left: 22px;
   display: flex;
   flex-direction: column;
 }
@@ -1972,7 +1972,7 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   color: #1F292E;
   text-decoration: none;
 }
-.footer .footer-concat .concat-card .content .title:hover {
+.footer .footer-concat .concat-card:hover .content .title {
   color: #1A70D8;
   text-decoration: none;
 }
@@ -1984,15 +1984,8 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   width: 40px;
   height: 30px;
 }
-.footer .footer-concat .concat-card .email-icon:hover {
+.footer .footer-concat .concat-card:last-child:hover .email-icon {
   background-image: url(https://qiniu-test.modao.cc/email-hover.svg);
-  width: 40px;
-  height: 30px;
-}
-.footer .footer-concat .concat-card .content {
-  margin-left: 32px;
-  display: flex;
-  flex-direction: column;
 }
 .footer .footer-concat .concat-card .content .email {
   color: #1F292E;
