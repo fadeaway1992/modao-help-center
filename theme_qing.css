@@ -2134,12 +2134,12 @@ section.side-tree .cate-wrap h3.cate-name {
 }
 section.side-tree .cate-wrap h3.cate-name img.cate-title-icon {
   width: 38px;
+  padding-right: 14px;
 }
 section.side-tree .cate-wrap h3.cate-name a {
   color: #1F292E;
   font-size: 16px;
   font-weight: 500;
-  padding-left: 14px;
 }
 section.side-tree a {
   color: inherit;

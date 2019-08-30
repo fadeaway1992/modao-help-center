@@ -43,7 +43,13 @@ if (sideTree) {
       item.parentNode.removeChild(item)
     }
   })
-  tree.querySelector('.cate-wrap .cate-title-icon').src = cateIconAdress[cate]
+  const cateTitleIcon = tree.querySelector('.cate-wrap .cate-title-icon')
+  if (cateIconAdress[cate]) { // 有图标
+    cateTitleIcon.src = cateIconAdress[cate]
+  } else { // 没图标
+    cateTitleIcon.parentNode.removeChild(cateTitleIcon)
+  }
+  
   sideTree.innerHTML = tree.innerHTML
 }
 // $('.cate-wrap .cate-name').click(function(e) {
@@ -144,6 +150,14 @@ function throttle(func, wait, options) {
   };
 };
 
+/* 首页 head bar 背景色 */
+const headBar = document.querySelector('#nav')
+if(location.pathname === '/hc/' || location.pathname === '/hc' || location.pathname === '/') {
+  headBar.style.backgroundColor = '#FAFAFC'
+} else {
+  headBar.style.backgroundColor = '#FFFFFF'
+}
+
 /* 侦听页面滚动 */
 function onScroll() {
   const clientHeight = window.innerHeight
@@ -151,7 +165,11 @@ function onScroll() {
   const toTop = document.getElementById('toTop')
   const headBar = document.querySelector('#nav')
   if(scrollTop === 0) {
-    headBar.style.backgroundColor = '#FAFAFC'
+    if(location.pathname === '/hc/' || location.pathname === '/hc' || location.pathname === '/') {
+      headBar.style.backgroundColor = '#FAFAFC'
+    } else {
+      headBar.style.backgroundColor = '#FFFFFF'
+    }
     headBar.style.boxShadow = 'none'
   } else {
     headBar.style.backgroundColor = '#FFFFFF'
@@ -163,5 +181,4 @@ function onScroll() {
     toTop.style.display = 'block'
   }
 }
-
-window.onscroll = throttle(onScroll, 300, {leading: true, trailing: true})
+window.addEventListener('scroll', throttle(onScroll, 300, {leading: true, trailing: true}))
