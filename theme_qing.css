@@ -2380,3 +2380,30 @@ section.no-result .tips-container ul.tips-list>li>span {
   color: #298DF8;
 }
 
+/* 文章详情页 */
+.article .article-header h2 {
+  padding: 0;
+  margin-bottom: 48px;
+  border: none;
+}
+.article-content .original-content {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.article-content .next_prev_wrap:first-of-type {
+  float: left;
+}
+.article-content .next_prev_wrap:last-of-type {
+  float: right;
+}
+.article-content .next_prev_wrap a {
+  color: #1F292E;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.article-content .next_prev_wrap a:hover {
+  color: #1A70D8;
+}
