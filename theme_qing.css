@@ -2176,8 +2176,7 @@ section.side-tree h3 {
 
 /* 文章详情页 */
 .content-main {
-  margin: 0 auto;
-  width: 1164px;
+  width: 100%;
 }
 .sub-nav {
   display: flex;
