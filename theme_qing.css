@@ -441,6 +441,15 @@ main section.content {
   margin-bottom: 30px;
   font-weight: bold;
 }
+.content h2.section-title {
+  font-size: 32px;
+  line-height: 45px;
+  color: #1F292E;
+  padding: 0;
+  margin-bottom: 52px;
+  font-weight: bold;
+  border-bottom: none;
+}
 .content h2 > a {
   color: #374051;
 }
@@ -2159,7 +2168,7 @@ section.side-tree ul li{
 section.side-tree ul li.active {
   color: #298DF8;
 }
-section.side-tree ul li:hover {
+section.side-tree ul li a:hover {
   color: #1A70D8;
 }
 section.side-tree ul li:first-child{
@@ -2343,5 +2352,32 @@ section.no-result .tips-container ul.tips-list>li>span {
   opacity: 0.3;
 }
 
-
+/* 文章列表 */
+.listandarticles .articles-list li {
+  padding: 0;
+  border: none;
+  margin-bottom: 24px;
+}
+.listandarticles .articles-list li:hover {
+  background: initial;
+}
+.listandarticles .articles-list .posts-item-vote-state {
+  display: none;
+}
+.listandarticles .articles-list li .posts-item-content {
+  padding: 0;
+}
+.listandarticles .articles-list li .posts-item-content p {
+  display: none;
+}
+.posts-item-content h3 > a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1F292E;
+}
+.posts-item-content h3 > a:hover {
+  color: #298DF8;
+}
 
