@@ -2261,6 +2261,7 @@ section.no-result {
   margin: 80px auto;
 }
 section.no-result h2.no-result-title {
+  color: #1F292E;
   font-size: 24px;
   line-height: 33px;
   font-weight: 500;
@@ -2280,6 +2281,9 @@ section.no-result .no-result-subtitle a {
   color: #298DF8;
   text-decoration: underline;
 }
+section.no-result .no-result-subtitle a:hover {
+  color: #1A70D8;
+}
 section.no-result .tips-container {
   background: #FAFAFA;
   padding: 32px;
@@ -2293,6 +2297,8 @@ section.no-result .tips-container h3 {
 section.no-result .tips-container h3 img {
   width: 24px;
   padding-right: 8px;
+  box-sizing: content-box;
+  vertical-align: bottom;
 }
 section.no-result .tips-container ul.tips-list {
   margin-left: 20px;

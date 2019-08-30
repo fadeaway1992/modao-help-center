@@ -1,6 +1,8 @@
 // 进入页面后删除原生头部
 const tobeRemoved = document.querySelector('body>div:first-child')
 tobeRemoved && tobeRemoved.parentNode.removeChild(tobeRemoved);
+// 设置字体
+document.body.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif';
 // 设置语言
 (function(){
   if (location.search.indexOf('lang=en') !== -1) {
