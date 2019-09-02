@@ -184,3 +184,19 @@ function onScroll() {
   }
 }
 window.addEventListener('scroll', throttle(onScroll, 300, {leading: true, trailing: true}))
+
+/* 上一篇/下一篇 位置 */
+const nextPrevWrap = document.querySelectorAll('.next_prev_wrap')
+if (nextPrevWrap && nextPrevWrap.length === 1) {
+  const articleLink = nextPrevWrap[0].querySelector('a')
+  switch(articleLink.className) {
+    case 'prev':
+      nextPrevWrap[0].style.float = 'left'
+      break
+    case 'next':
+      nextPrevWrap[0].style.float = 'right'
+      break
+    default:
+      break
+  }
+}
