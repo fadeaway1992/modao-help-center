@@ -1742,10 +1742,9 @@ section.content .wrap section.cate.startup ul.cate-list>li .more {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
   background-size: cover;
   border: 1px solid #EBEBEB;
-  box-shadow: 0 2px 20px 0 rgba(91,107,115,0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 2px 20px 0 rgba(91,107,115,0.15);
   border-radius: 2px;
 }
 .wrap section.video-tutorial ul.video-list li.video-item:nth-of-type(1) div.img-wrap {
