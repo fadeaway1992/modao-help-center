@@ -1624,19 +1624,15 @@ section.content .wrap section.cate.startup h2 {
 section.content .wrap section.cate.startup ul.cate-list {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (min-width: 1320px) {
-  section.content .wrap section.cate.startup ul.cate-list {
-    justify-content: space-between;
-  }
-}
+
 section.content .wrap section.cate.startup ul.cate-list {
   margin-bottom: 24px;
 }
 section.content .wrap section.cate.startup ul.cate-list>li {
-  padding: 16px 20px 12px 0;
+  padding: 16px 0 12px 0;
   width: 219px;
   box-sizing: border-box;
 }
