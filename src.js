@@ -94,7 +94,11 @@ videoCloseIcons.length && videoCloseIcons.forEach(function(button) {
 if(location.href.indexOf('/search/results') !== -1) {
   const searchResultText = document.querySelector('.search-btitle').textContent
   const regexp = /搜索到\s+(\d+)\s+条\s+"(.+)"/
-  const [match, searchResultCount, keywords] = regexp.exec(searchResultText)
+  // const [match, searchResultCount, keywords] = regexp.exec(searchResultText)
+  const result = regexp.exec(searchResultText)
+  const match = result[0]
+  const searchResultCount = result[1]
+  const keywords = result[2]
   document.querySelector('input[name=keyword]').value = keywords
   if(searchResultCount === '0') {
     const footer = document.querySelector('.footer')
