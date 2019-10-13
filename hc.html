@@ -95,6 +95,12 @@ $.ajaxSetup({
         </nav>
     </div>
 </header>
+<!-- 广告 -->
+<section class="ad">
+	<a class="ad-link" href="https://modao.cc/promotion?channel=help" target="_blank">
+		<img src="https://cdn.modao.cc/activity.png">
+	</a>
+</section>
 <!-- 墨刀 头部 -->
 <nav class="mb-nav-org" id="nav">
 	<div class="header-left" id="header-left">
@@ -737,5 +743,14 @@ $.ajaxSetup({
 /*]]>*/
 </script>
 <script src="./uglified.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script>
+  const isShowActivity = moment().isBetween('2019-10-14 9:00', '2019-10-31 23:59')
+  if (!isShowActivity) {
+		document.querySelector('.ad').style.display = 'none'
+		document.querySelector('main').style.marginTop = '66px'
+		document.querySelector('#nav').style.top = '0'
+	}
+</script>
 </body>
 </html>
