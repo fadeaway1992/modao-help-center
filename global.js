@@ -1078,6 +1078,26 @@ var MyModule = (function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* 自定义全局 JS */
+
   // 进入页面后删除原生头部
   var tobeRemoved = document.querySelector('body>div:first-child');
   tobeRemoved && tobeRemoved.parentNode.removeChild(tobeRemoved); // 设置字体

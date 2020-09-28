@@ -731,15 +731,6 @@ $.ajaxSetup({
 
 /*]]>*/
 </script>
-<script src="./uglified.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script>
-  const isShowActivity = moment().isBetween('2019-10-14 9:00', '2019-10-31 23:59')
-  if (!isShowActivity) {
-		document.querySelector('.ad').style.display = 'none'
-		document.querySelector('main').style.marginTop = '66px'
-		document.querySelector('#nav').style.top = '0'
-	}
-</script>
+<script src="./global.js"></script>
 </body>
 </html>
