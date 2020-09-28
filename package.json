@@ -4,8 +4,6 @@
   "description": "",
   "main": "global.js",
   "scripts": {
-    "bundle": "babel src.js -o bundle.js && rollup -c --no-treeshake",
-    "uglify": "uglifyjs --compress --mangle -o uglified.js -- global.js",
     "css": "uglifycss theme_qing.css > uglified.css"
   },
   "keywords": [],
